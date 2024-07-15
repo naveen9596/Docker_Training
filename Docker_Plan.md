@@ -1,4 +1,3 @@
-Here’s a comprehensive 4-day Docker training plan with topics, notes, and a brief on the slides:
 
 ### Day 1: Introduction to Docker
 
