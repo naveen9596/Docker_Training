@@ -2,14 +2,32 @@
 
 Dockerfile ＞ Docker Image ＞ Docker Container ＞ Access the App
 
-Step 1 - Create a new directory mkdir myapp
-       cd myapp   
+# Step 1 - Create a new directory
+- mkdir myapp
+- cd myapp   
 
-Step 2 - Create a file called "index.html" echo "Hello, world!" ＞ index.html
+# Step 2 - Create a file called "index.html"
 
-Step 3 - Create a file named Dockerfile  touch Dockerfile
+- echo "Hello, world!" ＞ index.html
 
+Step 3 - Create a file named Dockerfile  
+
+- touch <demo.html>
+  
 Step 4 - Open the "Dockerfile" file in a text editor and add the following lines:
+
+By using VI editor
+
+-vi demo.html
+
+
+
+
+
+
+
+
+-----------------------------------------------------------
 
 FROM nginx
 COPY index.html /usr/share/nginx/html
