@@ -25,7 +25,7 @@ Introduction to Docker
 
 ## Target Audience
 
-Software engineers
-Data engineers
-DevOps engineers
-Site reliability engineers
+- Software engineers
+- Data engineers
+- DevOps engineers
+- Site reliability engineers
