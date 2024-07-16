@@ -2,11 +2,11 @@
 
 Dockerfile ＞ Docker Image ＞ Docker Container ＞ Access the App
 
-# Step 1 - Create a new directory
+## Step 1 - Create a new directory
 - mkdir myapp
 - cd myapp   
 
-# Step 2 - Create a file called "index.html"
+## Step 2 - Create a file called "index.html"
 
 - echo "Hello, world!" ＞ index.html
 
@@ -15,23 +15,18 @@ Step 3 - Create a file named Dockerfile
 - touch <demo.html>
   
 Step 4 - Open the "Dockerfile" file in a text editor and add the following lines:
-
+----
+**Example:**
 By using VI editor
 
 -vi demo.html
-
-
-
-
-
-
-
-
 -----------------------------------------------------------
-
+```
 FROM nginx
 COPY index.html /usr/share/nginx/html
-
+```
+------------------------------------------
+**Comment:**
 This Dockerfile defines a new Docker image that 
 - uses the official nginx image as a base
 - then copy the index.html file to the appropriate location in the image
@@ -39,16 +34,19 @@ This Dockerfile defines a new Docker image that
 - A Dockerfile is a text file with instructions to build a Docker Image
 When we run a Dockerfile, Docker image is created
 When we run the docker image, containers are created
+----------------------------------------------
+## 5 - Start docker & Build docker image from dockerfile 
 
-Step 5 - Start docker & Build docker image from dockerfile 
-docker build -t myapp .
+- docker build -t myapp .
+
+  
 This command builds a new Docker image with the tag "myapp" using the Dockerfile in the current directory.
 
-Step 6 - Run docker container from the image   
+## Step 6 - Run docker container from the image   
 docker run -p 8080:80 myapp
 This tells Docker to run the myapp container and map port 8080 on your local machine to port 80 inside the container
 
-Step 7 - Access the app
+## Step 7 - Access the app
 Open a web browser and navigate to http://localhost:8080 to see the "Hello, world!" message displayed in your web browser.
 If you are using AWS EC2 Linux, you will need to make sure that the security group for your AWS Linux instance allows inbound traffic on port 8080 (or whichever port you chose to map to port 80 inside the container).
 
